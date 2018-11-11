@@ -102,43 +102,62 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    font-weight: 900;
+    font-size: 24px;
+  }
 
-/* Holy grail responsive template CSS */
+   body {
+    min-height: calc(100vh - 100px);
+    margin: 5px;
+  }
 
-   .grid {
+   .maingrid {
     display: grid;
-    grid-template-columns: 150px auto 150px;
-    grid-gap: 1em;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
   }
   
-  header, footer {
-    grid-column: 1 / 4;
+  .header{
+    background-color:paleturquoise;
+    display:grid;
+  }
+
+  .footer{
+    background-color:greenyellow;
+    display:grid;
+  }
+
+  .whitespace-and-nav{
+    background-color:silver;
+
+  }
+
+  .full-bleed-image{
+    background-color:lavender;
+  }
+
+  .logo-and-copyright{
+      background-color:lightblue;
+  }
+
+  .information-and-CTAs{
+      background-color:lightcoral;
   }
   
-  @media all and (max-width: 700px) {
-    aside,
-    article {
-      grid-column: 1 / 4;
-    }
-  }
-  
-  /* Demo Specific Styles */
-  body {
-    margin: 0 auto;
-    max-width: 56em;
-    padding: 1em 0;
-  }
-  
-  header,
-  aside,
-  article,
-  footer {
-    background: #eaeaea;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 25vh;
-  }
+@media all and (max-width: 320px) {
+    
+}
+
+@media all and (max-width: 375px) {
+    
+}
+
+@media all and (max-width: 425px) {
+    
+}
 
 
 
