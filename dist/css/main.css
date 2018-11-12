@@ -120,9 +120,22 @@ textarea {
     grid-template-columns: 1fr;
   }
   
+  /* Make this sticky past the fold with a click to open menu that follows the sticky menu  
+    with a logo first*/
+
+    /* Header */
   .header{
-    background-color:paleturquoise;
     display:grid;
+    grid-gap:5px;
+    grid-template-columns:3fr 1fr;
+  }
+
+  .header-logo-and-white-space{
+      background-color:lightcyan;
+  }
+
+  .header-nav-menu{
+      background-color:lightpink;
   }
 
   .footer{
@@ -158,16 +171,6 @@ textarea {
 @media all and (max-width: 425px) {
     
 }
-
-
-
-
-
-
-
-
-
-
 
  /* ==========================================================================
    Helper classes
