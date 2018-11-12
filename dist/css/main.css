@@ -111,7 +111,8 @@ textarea {
 
    body {
     min-height: calc(100vh - 100px);
-    margin: 5px;
+    margin: 10px;
+    border:4px solid black;
   }
 
    .maingrid {
@@ -127,15 +128,25 @@ textarea {
   .header{
     display:grid;
     grid-gap:5px;
-    grid-template-columns:3fr 1fr;
+    grid-template-columns:5fr 1fr;
   }
 
   .header-logo-and-white-space{
       background-color:lightcyan;
+      font-size:42px;
+      padding:15px;
+  }
+
+
+  .fa-bars, .fa-search{
+    justify-self:end;
   }
 
   .header-nav-menu{
       background-color:lightpink;
+      display:grid;
+      font-size:35px;
+      padding:10px;
   }
 
   .footer{
@@ -144,8 +155,19 @@ textarea {
   }
 
   .whitespace-and-nav{
-    background-color:silver;
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:10fr 1fr;
+    
+  }
 
+  .whitespace-and-nav-whitespace{
+      background:lightgreen;
+  }
+  .whitespace-and-nav-nav{
+    background:lightpink;
+    display:grid;
+    padding:10px;
   }
 
   .full-bleed-image{
