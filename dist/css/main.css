@@ -154,17 +154,17 @@ textarea {
     display:grid;
   }
 
-  .whitespace-and-nav{
+  .searchbar-and-nav{
     display:grid;
     grid-gap:5px;
     grid-template-columns:10fr 1fr;
     
   }
 
-  .whitespace-and-nav-whitespace{
+  .searchbar-and-nav-searchbar{
       background:lightgreen;
   }
-  .whitespace-and-nav-nav{
+  .searchbar-and-nav-nav{
     background:lightpink;
     display:grid;
     padding:10px;
@@ -178,8 +178,26 @@ textarea {
       background-color:lightblue;
   }
 
-  .information-and-CTAs{
-      background-color:lightcoral;
+  .information-and-CTAs-triple{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:5px;
+  }
+
+  .information-and-CTAs-triple-item-1{
+    background-color:lightseagreen;
+  }
+
+  .information-and-CTAs-triple-item-2{
+    background-color:lightblue;
+  }
+
+  .information-and-CTAs-triple-item-3{
+    background-color:lightgreen;
+  }
+
+  .information-and-CTAs-single{
+    background-color:tomato;
   }
   
 @media all and (max-width: 320px) {
