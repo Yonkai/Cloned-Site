@@ -172,8 +172,17 @@ textarea {
   }
 
   .full-bleed-image{
-    background-color:lavender;
+    background:white url(../img/bw_tree.jpg);
+    background-size:cover;
+    background-position: bottom;
+    min-height:400px;
+    width:100%;
   }
+
+  /* .full-bleed-image img {
+    object-fit:contain;
+    width:100%;
+  } */
 
   .logo-and-copyright{
       background-color:lightblue;
@@ -201,7 +210,10 @@ textarea {
     background-color:tomato;
   }
 
-  /* END MOBILE WIREFRAME */
+  /* END MOBILE WIREFRAMEsssssssssssssssssssssssssssssd */
+
+  /* START DESKddsssssssssssssTOP WIREFRAME */
+  /* END DESKTOP WIREFRAME */
   
 @media all and (max-width: 320px) {
     
