@@ -111,8 +111,7 @@ textarea {
 
    body {
     min-height: calc(100vh - 100px);
-    margin: 10px;
-    border:4px dashed black;
+
   }
 
   /* BEGIN MOBILE WIREFRAME */
@@ -135,7 +134,7 @@ textarea {
   .header-logo-and-white-space{
       background-color:lightcyan;
       font-size:42px;
-      padding:15px;
+      padding:5px;
   }
 
 
@@ -210,9 +209,14 @@ textarea {
     background-color:tomato;
   }
 
-  /* END MOBILE WIREFRAMEsssssssssssssssssssssssssssssd */
+  img{
+      max-width:100%;
+    
+  }
 
-  /* START DESKddsssssssssssssTOP WIREFRAME */
+  /* END MOBILE WIREFRAME */
+
+  /* START DESKTOP WIREFRAME */
   /* END DESKTOP WIREFRAME */
   
 @media all and (max-width: 320px) {

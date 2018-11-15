@@ -1,0 +1,27 @@
+CTA1:
+'call' (telephone) call to action
+
+CTA2:
+'Find branch/ATM'
+
+CTA3:
+'My account'
+
+information-and-CTAs-single:
+'
+information-and-CTAs-single:
+information-and-CTAs-single:
+
+information-and-CTAs-single:
+information-and-CTAs-single:
+information-and-CTAs-single:
+
+information-and-CTAs-single:
+information-and-CTAs-single:
+information-and-CTAs-single:
+
+logo-and-copyright:
+
+Color scheme:
+https://colorschemedesigner.com/csd-3.5/#3351FGrqFUB9B
+  
