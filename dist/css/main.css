@@ -102,6 +102,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   :root {
+    /* Color Scheme:royal blue, monochrome */
+    --main-bg-color:whitesmoke;
+    --main-bg-contrast-color:rgb(27, 27, 27);
+    --royalblue-shade-high:#00123B;
+    --royalblue-shade-med:#04329F;
+    --royalblue-shade-low:#1140AD;
+    --royalblue-shade-verylow:#1B47AD;
+    --royalblue-complement:#F3A200;
+    
+    }
+
    html {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
