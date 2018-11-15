@@ -105,13 +105,12 @@ textarea {
    :root {
     /* Color Scheme:royal blue, monochrome */
     --main-bg-color:whitesmoke;
-    --main-bg-contrast-color:rgb(27, 27, 27);
-    --royalblue-shade-high:#00123B;
+    --main-bg-contrast-color:rgb(14, 11, 11);
+    --royalblue-shade-high:#00123C;
     --royalblue-shade-med:#04329F;
     --royalblue-shade-low:#1140AD;
-    --royalblue-shade-verylow:#1B47AD;
+    --royalblue-shade-verylow:rgb(69, 111, 209);
     --royalblue-complement:#F3A200;
-    
     }
 
    html {
@@ -119,10 +118,12 @@ textarea {
     box-sizing: border-box;
     font-weight: 900;
     font-size: 24px;
+    color:var(--main-bg-contrast-color);
   }
 
    body {
     min-height: calc(100vh - 100px);
+    background-color:var(--royalblue-complement);
 
   }
 
@@ -144,7 +145,7 @@ textarea {
   }
 
   .header-logo-and-white-space{
-      background-color:lightcyan;
+      background-color:var(--royalblue-shade-verylow);
       font-size:42px;
       padding:5px;
   }
@@ -155,14 +156,14 @@ textarea {
   }
 
   .header-nav-menu{
-      background-color:lightpink;
+      background-color:var(--royalblue-shade-low);
       display:grid;
       font-size:35px;
       padding:10px;
   }
 
   .footer{
-    background-color:greenyellow;
+    background-color:var(--main-bg-color);
     display:grid;
   }
 
@@ -174,16 +175,16 @@ textarea {
   }
 
   .searchbar-and-nav-searchbar{
-      background:lightgreen;
+      background:var(--royalblue-shade-verylow);
   }
   .searchbar-and-nav-nav{
-    background:lightpink;
+    background:var(--royalblue-shade-low);
     display:grid;
     padding:10px;
   }
 
   .full-bleed-image{
-    background:white url(../img/bw_tree.jpg);
+    background:var(--main-bg-color) url(../img/bw_tree.jpg);
     background-size:cover;
     background-position: bottom;
     min-height:400px;
@@ -196,7 +197,7 @@ textarea {
   } */
 
   .logo-and-copyright{
-      background-color:lightblue;
+      background-color:var(--main-bg-color);
   }
 
   .information-and-CTAs-triple{
@@ -206,24 +207,32 @@ textarea {
   }
 
   .information-and-CTAs-triple-item-1{
-    background-color:lightseagreen;
+    background-color:var(--royalblue-shade-low);
+
   }
 
   .information-and-CTAs-triple-item-2{
-    background-color:lightblue;
+    background-color:var(--royalblue-shade-low);
+
   }
 
   .information-and-CTAs-triple-item-3{
-    background-color:lightgreen;
+    background-color:var(--royalblue-shade-low);
+
   }
 
   .information-and-CTAs-single{
-    background-color:tomato;
+    background-color:var(--royalblue-shade-verylow);
+
   }
 
   img{
       max-width:100%;
     
+  }
+  
+  .logo-and-copyright{
+      background-color:var(--royalblue-shade-verylow);
   }
 
   /* END MOBILE WIREFRAME */
