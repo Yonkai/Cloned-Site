@@ -109,7 +109,7 @@ textarea {
     --royalblue-shade-high:#00123C;
     --royalblue-shade-med:#04329F;
     --royalblue-shade-low:#1140AD;
-    --royalblue-shade-verylow:rgb(69, 111, 209);
+    --royalblue-shade-verylow:rgb(75, 116, 211);
     --royalblue-complement:#F3A200;
     }
 
@@ -117,7 +117,7 @@ textarea {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
     font-weight: 900;
-    font-size: 24px;
+    font-size: 14px;
     color:var(--main-bg-contrast-color);
   }
 
