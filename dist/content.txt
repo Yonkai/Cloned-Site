@@ -1,17 +1,35 @@
+Full-bleed-image:
+Remove the carosel because its obnoxious and bad UX,
+very distracting as compared to the copied site. (hvfcu.org)
+
 CTA1:
-'call' (telephone) call to action
+'call' link and a phone icon
 
 CTA2:
-'Find branch/ATM'
+'Find branch/ATM' and a location icon
 
 CTA3:
-'My account'
+'My account' and a placeholder user image icon
 
 information-and-CTAs-single:
-'
-information-and-CTAs-single:
-information-and-CTAs-single:
+checkmarkicon
+'NHFCU Memebership'
+'Meeting the financial needs of those who live, work, worship,
+volunteer or attend school in Northern Hero district'
+    bullets:
+    'Open an account'
+    'Checking accounts'
+    'Certificate accounts'
+    small banner below information-and-CTAs-single:
+    'Explore membership' (Add this as an auto row).
 
+information-and-CTAs-single:
+'' as above with new information.
+
+information-and-CTAs-single:
+'' as above with new information.
+
+-----
 information-and-CTAs-single:
 information-and-CTAs-single:
 information-and-CTAs-single:
