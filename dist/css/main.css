@@ -261,8 +261,6 @@ textarea {
 /* Why does order matter for media queries?? RTFM!! Hmm..*/
 @media all and (max-width: 425px) {
     .header-logo-and-white-space{
-        background-color:var(--royalblue-shade-verylow);
-        font-family: 'Russo One', sans-serif;
         font-size:24px;
         padding:5px;
     }
@@ -271,27 +269,19 @@ textarea {
 
 @media all and (max-width: 375px) {
     .header-logo-and-white-space{
-        background-color:var(--royalblue-shade-verylow);
-        font-family: 'Russo One', sans-serif;
-        font-size:24px;
-        padding:5px;
+        font-size:22px;
+        padding:4px;
     }
     
 }
 
 @media all and (max-width: 320px) {
     .header-logo-and-white-space{
-        background-color:var(--royalblue-shade-verylow);
-        font-family: 'Russo One', sans-serif;
         font-size:20px;
-        padding:5px;
+        padding:3px;
     }
 
 }
-
-
-
-
 
 @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
