@@ -111,6 +111,7 @@ textarea {
     --royalblue-shade-low:#1140AD;
     --royalblue-shade-verylow:rgb(75, 116, 211);
     --royalblue-complement:#F3A200;
+    --rotate-icon:335deg;
     }
 
    html {
@@ -124,6 +125,7 @@ textarea {
    body {
     min-height: calc(100vh - 100px);
     background-color:var(--royalblue-complement);
+    border: 5px solid var(--royalblue-complement);
 
   }
 
@@ -146,8 +148,13 @@ textarea {
 
   .header-logo-and-white-space{
       background-color:var(--royalblue-shade-verylow);
-      font-size:42px;
+      font-family: 'Russo One', sans-serif;
+      font-size:36px;
       padding:5px;
+  }
+
+  .header-logo-and-white-space i span{
+    font-family: 'Russo One', sans-serif;
   }
 
 
@@ -156,7 +163,7 @@ textarea {
   }
 
   .header-nav-menu{
-      background-color:var(--royalblue-shade-low);
+      background-color:var(--main-bg-color);
       display:grid;
       font-size:35px;
       padding:10px;
@@ -175,7 +182,7 @@ textarea {
   }
 
   .searchbar-and-nav-searchbar{
-      background:var(--royalblue-shade-verylow);
+      background:var(--main-bg-color);
   }
   .searchbar-and-nav-nav{
     background:var(--royalblue-shade-low);
@@ -207,17 +214,17 @@ textarea {
   }
 
   .information-and-CTAs-triple-item-1{
-    background-color:var(--royalblue-shade-low);
+    background-color:var(--main-bg-color);
 
   }
 
   .information-and-CTAs-triple-item-2{
-    background-color:var(--royalblue-shade-low);
+    background-color:var(--main-bg-color);
 
   }
 
   .information-and-CTAs-triple-item-3{
-    background-color:var(--royalblue-shade-low);
+    background-color:var(--main-bg-color);
 
   }
 
@@ -228,29 +235,68 @@ textarea {
 
   img{
       max-width:100%;
-    
   }
+
+  .fontawesome-rotate{
+    -webkit-transform: rotate(var(--rotate-icon));
+    -moz-transform: rotate(var(--rotate-icon));
+    -ms-transform: rotate(var(--rotate-icon));
+    -o-transform: rotate(var(--rotate-icon));
+    transform: rotate(var(--rotate-icon));
+    text-shadow:4px 7px 3px rgba(25, 25, 112, 0.75);
+  }
+
   
   .logo-and-copyright{
-      background-color:var(--royalblue-shade-verylow);
+      background-color:var(--main-bg-color);
   }
 
   /* END MOBILE WIREFRAME */
 
   /* START DESKTOP WIREFRAME */
   /* END DESKTOP WIREFRAME */
-  
-@media all and (max-width: 320px) {
+
+
+/* Mobile Media Queries */
+/* Why does order matter for media queries?? RTFM!! Hmm..*/
+@media all and (max-width: 425px) {
+    .header-logo-and-white-space{
+        background-color:var(--royalblue-shade-verylow);
+        font-family: 'Russo One', sans-serif;
+        font-size:24px;
+        padding:5px;
+    }
     
 }
 
 @media all and (max-width: 375px) {
+    .header-logo-and-white-space{
+        background-color:var(--royalblue-shade-verylow);
+        font-family: 'Russo One', sans-serif;
+        font-size:24px;
+        padding:5px;
+    }
     
 }
 
-@media all and (max-width: 425px) {
-    
+@media all and (max-width: 320px) {
+    .header-logo-and-white-space{
+        background-color:var(--royalblue-shade-verylow);
+        font-family: 'Russo One', sans-serif;
+        font-size:20px;
+        padding:5px;
+    }
+
 }
+
+
+
+
+
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
  /* ==========================================================================
    Helper classes
