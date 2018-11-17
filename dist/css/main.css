@@ -216,6 +216,19 @@ textarea {
     background-position: bottom;
     min-height:400px;
     width:100%;
+
+  }
+
+  /* Decouple as needed */
+  .fa-user-circle,.fa-map-marked-alt,.fa-phone{
+      font-size:35px;
+      text-align:center;
+  }
+  .information-and-CTAs-triple-item-1-text,
+  .information-and-CTAs-triple-item-2-text,
+  .information-and-CTAs-triple-item-3-text{
+    text-decoration:underline;
+    text-align:center;
   }
 
 
@@ -232,21 +245,40 @@ textarea {
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap:5px;
+    
+
   }
 
+  /* Separated out for decoupling, I suppose. */
   .information-and-CTAs-triple-item-1{
     background-color:var(--main-bg-color);
-
+    font-size:20px;
+    /* text-decoration:underline; */
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
   }
 
   .information-and-CTAs-triple-item-2{
     background-color:var(--main-bg-color);
+    font-size:20px;
+    /* text-decoration:underline; */
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
 
   }
 
   .information-and-CTAs-triple-item-3{
-    background-color:var(--main-bg-color);
-
+    background-color:var(--main-bg-color);    
+    font-size:20px;
+    /* text-decoration:underline; */
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
   }
 
   .information-and-CTAs-single{
