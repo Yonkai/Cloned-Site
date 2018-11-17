@@ -193,13 +193,31 @@ textarea {
     padding:10px;
   }
 
-  .full-bleed-image{
-    background:var(--main-bg-color) url(../img/bw_tree.jpg);
+  .full-bleed-image-1{
+    background:var(--main-bg-color) url(../img/meadows.jpg);
     background-size:cover;
     background-position: bottom;
     min-height:400px;
     width:100%;
   }
+
+  .full-bleed-image-2{
+    background:var(--main-bg-color) url(../img/deep_forest.jpg);
+    background-size:cover;
+    background-position: bottom;
+    min-height:400px;
+    width:100%;
+  }
+
+
+  .full-bleed-image-3{
+    background:var(--main-bg-color) url(../img/outcrop.jpg);
+    background-size:cover;
+    background-position: bottom;
+    min-height:400px;
+    width:100%;
+  }
+
 
   /* .full-bleed-image img {
     object-fit:contain;
