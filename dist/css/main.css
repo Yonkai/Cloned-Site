@@ -87,7 +87,7 @@ textarea {
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
-
+   
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -95,14 +95,13 @@ textarea {
     padding: 0.2em 0;
 }
 
-
-
-
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
    :root {
+    /* TODO: CHANGE BORING PLAIN COLORS TO BETTER GRADIENTS FROM UIGRADIENTS */
+
     /* Color Scheme:royal blue, monochrome */
     --main-bg-color:whitesmoke;
     --main-bg-contrast-color:rgb(14, 11, 11);
@@ -128,7 +127,6 @@ textarea {
     border: 5px solid var(--royalblue-complement);
 
   }
-
   /* BEGIN MOBILE WIREFRAME */
    .maingrid {
     display: grid;
