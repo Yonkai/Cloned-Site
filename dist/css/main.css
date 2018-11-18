@@ -101,6 +101,7 @@ textarea {
 
    :root {
     /* TODO: CHANGE BORING PLAIN COLORS TO BETTER GRADIENTS FROM UIGRADIENTS */
+    /* <!-- On colors: notice the switching of blue background-white text and white background-blue text pattern, not sure if this is a good pattern or not? --> */
 
     /* Color Scheme:royal blue, monochrome */
     --main-bg-color:whitesmoke;
@@ -118,6 +119,7 @@ textarea {
     box-sizing: border-box;
     font-weight: 900;
     font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
     color:var(--main-bg-contrast-color);
   }
 
@@ -223,12 +225,14 @@ textarea {
   .fa-user-circle,.fa-map-marked-alt,.fa-phone{
       font-size:35px;
       text-align:center;
+      margin:10px;
   }
   .information-and-CTAs-triple-item-1-text,
   .information-and-CTAs-triple-item-2-text,
   .information-and-CTAs-triple-item-3-text{
     text-decoration:underline;
     text-align:center;
+    font-family: 'Ubuntu', sans-serif;
   }
 
 
