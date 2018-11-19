@@ -117,7 +117,7 @@ textarea {
    html {
     /* border-box box model allows us to add padding and border to our elements without increasing their size */
     box-sizing: border-box;
-    font-weight: 900;
+    font-weight: 300;
     font-size: 14px;
     font-family: 'Ubuntu', sans-serif;
     color:var(--main-bg-contrast-color);
@@ -147,9 +147,11 @@ textarea {
   }
 
   .header-logo-and-white-space{
-      background-color:var(--royalblue-shade-verylow);
+      background-color:var(--royalblue-shade-med);
       font-family: 'Russo One', sans-serif;
       font-size:36px;
+      letter-spacing:5px;
+      color:var(--main-bg-color);
       padding:5px;
   }
 
@@ -160,6 +162,9 @@ textarea {
 
   .fa-bars, .fa-search{
     justify-self:end;
+  }
+  .fa-search{
+      color:var(--main-bg-color);
   }
 
   .header-nav-menu{
@@ -196,6 +201,7 @@ textarea {
   }
 
   .full-bleed-image-1{
+    /* Might add carosel just to give that flashy people who don't know what they're doing look designed it */
     background:var(--main-bg-color) url(../img/meadows.jpg);
     background-size:cover;
     background-position: bottom;
@@ -305,6 +311,11 @@ textarea {
   
   .logo-and-copyright{
       background-color:var(--main-bg-color);
+  }
+
+  .information-and-CTAs-single{
+      color:var(--main-bg-color);
+      background-color:var(--royalblue-shade-high);
   }
 
   /* END MOBILE WIREFRAME */
