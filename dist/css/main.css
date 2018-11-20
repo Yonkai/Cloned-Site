@@ -228,10 +228,15 @@ textarea {
   }
 
   /* Decouple as needed */
-  .fa-user-circle,.fa-map-marked-alt,.fa-phone{
+  .fa-user-circle,.fa-map-marked-alt,.fa-phone,.fa-users{
       font-size:35px;
       text-align:center;
       margin:10px;
+  }
+
+  .fa-users,.fa-home, .fa-hand-holding-usd{
+      font-size:60px;
+      text-align:center;
   }
   .information-and-CTAs-triple-item-1-text,
   .information-and-CTAs-triple-item-2-text,
@@ -255,12 +260,10 @@ textarea {
       display:grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap:5px;
-    
-
   }
 
   /* Separated out for decoupling, I suppose. */
-  .information-and-CTAs-triple-item-1{
+  .information-and-CTAs-triple-item-1,.information-and-CTAs-triple-item-2,.information-and-CTAs-triple-item-3{
     background-color:var(--main-bg-color);
     font-size:20px;
     /* text-decoration:underline; */
@@ -270,10 +273,11 @@ textarea {
     align-items:center; 
   }
 
-  .information-and-CTAs-triple-item-2{
+  /* {
+    Commented out for redudancy reduction.
     background-color:var(--main-bg-color);
     font-size:20px;
-    /* text-decoration:underline; */
+    text-decoration:underline;
     font-weight:900;
     display:grid;
     justify-items:center;
@@ -281,19 +285,15 @@ textarea {
 
   }
 
-  .information-and-CTAs-triple-item-3{
+  {
     background-color:var(--main-bg-color);    
     font-size:20px;
-    /* text-decoration:underline; */
+    text-decoration:underline;
     font-weight:900;
     display:grid;
     justify-items:center;
     align-items:center; 
-  }
-
-  .information-and-CTAs-single{
-    background-color:var(--royalblue-shade-verylow);
-  }
+  } */
 
   img{
       max-width:100%;
@@ -317,6 +317,49 @@ textarea {
       color:var(--main-bg-color);
       background-color:var(--royalblue-shade-high);
   }
+
+  .nhfcu-membership,.buying-a-home,.loan-rates{
+      display:grid;
+  }
+  /* unvisited link */
+.nhfcu-membership a:link,.buying-a-home a:link,.loan-rates a:link {
+    color:gainsboro;
+}
+
+/* visited link */
+.nhfcu-membership a:visited,.buying-a-home a:visited,.loan-rates a:visited {
+    color:white;
+}
+
+/* mouse over link */
+.nhfcu-membership a:hover,.buying-a-home a:hover,.loan-rates a:hover  {
+    color: purple;
+}
+
+/* selected link */
+.nhfcu-membership a:active,.buying-a-home a:active,.loan-rates a:active{
+    color:rgb(94, 0, 94);
+}
+
+  /* unvisited link */
+a:link {
+    color:rgb(17, 16, 16);
+}
+
+/* visited link */
+a:visited {
+    color:rgb(22, 22, 22);
+}
+
+/* mouse over link */
+a:hover {
+    color:var(--royalblue-shade-verylow);
+}
+
+/* selected link */
+a:active {
+    color:blue;
+}
 
   /* END MOBILE WIREFRAME */
 
