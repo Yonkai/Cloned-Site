@@ -125,8 +125,8 @@ textarea {
 
    body {
     min-height: calc(100vh - 100px);
-    background-color:var(--royalblue-complement);
-    border: 5px solid var(--royalblue-complement);
+    /* background-color:var(--royalblue-complement); */
+    /* border: 5px solid var(--royalblue-complement); */
 
   }
   /* BEGIN MOBILE WIREFRAME */
@@ -228,7 +228,7 @@ textarea {
   }
 
   /* Decouple as needed */
-  .fa-user-circle,.fa-map-marked-alt,.fa-phone,.fa-users{
+  .fa-user-circle,.fa-map-marked-alt,.fa-phone{
       font-size:35px;
       text-align:center;
       margin:10px;
@@ -237,7 +237,9 @@ textarea {
   .fa-users,.fa-home, .fa-hand-holding-usd{
       font-size:60px;
       text-align:center;
+      margin:10px;
   }
+
   .information-and-CTAs-triple-item-1-text,
   .information-and-CTAs-triple-item-2-text,
   .information-and-CTAs-triple-item-3-text{
@@ -314,8 +316,18 @@ textarea {
   }
 
   .information-and-CTAs-single{
+      display:grid;
       color:var(--main-bg-color);
       background-color:var(--royalblue-shade-high);
+  }
+
+  h1{
+      text-align:center;
+  }
+
+
+  p,h2,h3,ul{
+      margin:3px;
   }
 
   .nhfcu-membership,.buying-a-home,.loan-rates{
@@ -363,6 +375,7 @@ a:active {
 
   /* END MOBILE WIREFRAME */
 
+  /* For desktop have that large center column look with thick white space on each side look for large screens, limit the width based on media size? */
   /* START DESKTOP WIREFRAME */
   /* END DESKTOP WIREFRAME */
 
