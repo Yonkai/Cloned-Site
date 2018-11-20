@@ -320,6 +320,18 @@ textarea {
       display:grid;
       color:var(--main-bg-color);
       background-color:var(--royalblue-shade-high);
+      grid-template-columns:1fr;
+      
+  }
+  /*grid item of information-and-CTAs-single */
+  .information-and-CTAs-single-explore{
+    background-color:var(--main-bg-color);
+    color:var(--main-bg-contrast-color);
+    display:grid;
+    grid-template-columns:1fr;
+    justify-items:center;
+    align-items:center;
+    
   }
 
   h1{
@@ -383,6 +395,7 @@ a:active {
 
 /* Mobile Media Queries */
 /* Why does order matter for media queries?? RTFM!! Hmm..*/
+/* Also replace with minmax() where possible */
 @media all and (max-width: 475px) {
     .header-logo-and-white-space{
         font-size:24px;
