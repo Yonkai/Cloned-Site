@@ -204,7 +204,7 @@ textarea {
     /* Might add carosel just to give that flashy people who don't know what they're doing look designed it */
     background:var(--main-bg-color) url(../img/meadows.jpg);
     background-size:cover;
-    background-position: bottom;
+    /* background-position: bottom; */
     min-height:400px;
     width:100%;
   }
@@ -212,7 +212,7 @@ textarea {
   .full-bleed-image-2{
     background:var(--main-bg-color) url(../img/deep_forest.jpg);
     background-size:cover;
-    background-position: bottom;
+    background-position: top left;
     min-height:400px;
     width:100%;
   }
@@ -221,7 +221,7 @@ textarea {
   .full-bleed-image-3{
     background:var(--main-bg-color) url(../img/outcrop.jpg);
     background-size:cover;
-    background-position: bottom;
+    /* background-position: top left; */
     min-height:400px;
     width:100%;
 
@@ -232,6 +232,7 @@ textarea {
       font-size:35px;
       text-align:center;
       margin:10px;
+      color:rgb(34, 34, 34);
   }
 
   .fa-users,.fa-home, .fa-hand-holding-usd{
