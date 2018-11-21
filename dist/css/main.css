@@ -320,7 +320,9 @@ textarea {
       display:grid;
       color:var(--main-bg-color);
       background-color:var(--royalblue-shade-high);
-      grid-template-columns:1fr;
+      grid-template-columns:minmax(300px,1024px);
+      justify-content:center;
+      align-items:center;
       
   }
   /*grid item of information-and-CTAs-single */
@@ -345,6 +347,7 @@ textarea {
 
   .nhfcu-membership,.buying-a-home,.loan-rates{
       display:grid;
+ 
   }
   /* unvisited link */
 .nhfcu-membership a:link,.buying-a-home a:link,.loan-rates a:link {
