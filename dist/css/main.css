@@ -327,13 +327,15 @@ textarea {
   }
   /*grid item of information-and-CTAs-single */
   .information-and-CTAs-single-explore{
-    background-color:var(--main-bg-color);
-    color:var(--main-bg-contrast-color);
+    background-color:var(--royalblue-shade-med);
+    color:var(--main-bg-color);
     display:grid;
     grid-template-columns:1fr;
+    font-size:20px;
     justify-items:center;
     align-items:center;
-    
+    border-radius:23px;
+    margin:5px;
   }
 
   h1{
