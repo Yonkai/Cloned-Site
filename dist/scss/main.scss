@@ -1,0 +1,620 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+   
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   :root {
+    /* TODO: CHANGE BORING PLAIN COLORS TO BETTER GRADIENTS FROM UIGRADIENTS */
+    /* <!-- On colors: notice the switching of blue background-white text and white background-blue text pattern, not sure if this is a good pattern or not? --> */
+
+    /* Color Scheme:royal blue, monochrome */
+    --main-bg-color:whitesmoke;
+    --main-bg-contrast-color:rgb(14, 11, 11);
+    --royalblue-shade-high:#00123C;
+    --royalblue-shade-med:#04329F;
+    --royalblue-shade-low:#1140AD;
+    --royalblue-shade-verylow:rgb(75, 116, 211);
+    --royalblue-complement:#F3A200;
+    --rotate-icon:335deg;
+    }
+
+   html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color:var(--main-bg-contrast-color);
+  }
+
+   body {
+    min-height: calc(100vh - 100px);
+    /* background-color:var(--royalblue-complement); */
+    /* border: 5px solid var(--royalblue-complement); */
+
+  }
+  /* BEGIN MOBILE WIREFRAME */
+   .maingrid {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr;
+  }
+  
+  /* Make this sticky past the fold with a click to open menu that follows the sticky menu  
+    with a logo first*/
+
+    /* Header */
+  .header{
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:15fr 1fr;
+  }
+
+  .header-logo-and-white-space{
+      background-color:var(--royalblue-shade-med);
+      font-family: 'Russo One', sans-serif;
+      font-size:36px;
+      letter-spacing:5px;
+      color:var(--main-bg-color);
+      padding:5px;
+  }
+
+  .header-logo-and-white-space i span{
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .fa-bars, .fa-search{
+    justify-self:end;
+  }
+  .fa-search{
+      color:var(--main-bg-color);
+  }
+
+  .header-nav-menu{
+      background-color:var(--main-bg-color);
+      display:grid;
+      font-size:35px;
+      padding:10px;
+  }
+
+  .footer{
+    background-color:var(--main-bg-color);
+    display:grid;
+  }
+
+  .searchbar-and-nav{
+    display:grid;
+    grid-gap:5px;
+    grid-template-columns:15fr 1fr;
+    
+  }
+
+  #site-search{
+      width:100%;
+      height:100%;
+  }
+
+  .searchbar-and-nav-searchbar{
+      background:var(--main-bg-color);
+  }
+  .searchbar-and-nav-nav{
+    background:var(--royalblue-shade-low);
+    display:grid;
+    padding:10px;
+  }
+
+  .full-bleed-image-1{
+    /* Might add carosel just to give that flashy people who don't know what they're doing look designed it */
+    background:var(--main-bg-color) url(../img/meadows.jpg);
+    background-size:cover;
+    /* background-position: bottom; */
+    min-height:400px;
+    width:100%;
+  }
+
+  .full-bleed-image-2{
+    background:var(--main-bg-color) url(../img/deep_forest.jpg);
+    background-size:cover;
+    background-position: top left;
+    min-height:400px;
+    width:100%;
+  }
+
+
+  .full-bleed-image-3{
+    background:var(--main-bg-color) url(../img/outcrop.jpg);
+    background-size:cover;
+    /* background-position: top left; */
+    min-height:400px;
+    width:100%;
+
+  }
+
+  /* Decouple as needed */
+  .fa-user-circle,.fa-map-marked-alt,.fa-phone{
+      font-size:35px;
+      text-align:center;
+      margin:10px;
+      color:rgb(34, 34, 34);
+  }
+
+  .fa-users,.fa-home, .fa-hand-holding-usd{
+      font-size:60px;
+      text-align:center;
+      margin:10px;
+  }
+
+  .information-and-CTAs-triple-item-1-text,
+  .information-and-CTAs-triple-item-2-text,
+  .information-and-CTAs-triple-item-3-text{
+    text-decoration:underline;
+    text-align:center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
+  /* .full-bleed-image img {
+    object-fit:contain;
+    width:100%;
+  } */
+
+  .logo-and-copyright{
+      background-color:var(--main-bg-color);
+  }
+
+  .information-and-CTAs-triple{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:5px;
+  }
+
+  /* Separated out for decoupling, I suppose. */
+  .information-and-CTAs-triple-item-1,.information-and-CTAs-triple-item-2,.information-and-CTAs-triple-item-3{
+    background-color:var(--main-bg-color);
+    font-size:20px;
+    /* text-decoration:underline; */
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
+  }
+
+  /* {
+    Commented out for redudancy reduction.
+    background-color:var(--main-bg-color);
+    font-size:20px;
+    text-decoration:underline;
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
+
+  }
+
+  {
+    background-color:var(--main-bg-color);    
+    font-size:20px;
+    text-decoration:underline;
+    font-weight:900;
+    display:grid;
+    justify-items:center;
+    align-items:center; 
+  } */
+
+  img{
+      max-width:100%;
+  }
+
+  .fontawesome-rotate{
+    -webkit-transform: rotate(var(--rotate-icon));
+    -moz-transform: rotate(var(--rotate-icon));
+    -ms-transform: rotate(var(--rotate-icon));
+    -o-transform: rotate(var(--rotate-icon));
+    transform: rotate(var(--rotate-icon));
+    text-shadow:4px 7px 3px rgba(25, 25, 112, 0.75);
+  }
+
+  
+  .logo-and-copyright{
+      background-color:var(--main-bg-color);
+  }
+
+  .information-and-CTAs-single{
+      display:grid;
+      color:var(--main-bg-color);
+      background-color:var(--royalblue-shade-high);
+      grid-template-columns:minmax(300px,1024px);
+      justify-content:center;
+      align-items:center;
+      
+  }
+  /*grid item of information-and-CTAs-single */
+  .information-and-CTAs-single-explore{
+    background-color:var(--royalblue-shade-med);
+    color:var(--main-bg-color);
+    display:grid;
+    grid-template-columns:1fr;
+    font-size:20px;
+    justify-items:center;
+    align-items:center;
+    border-radius:23px;
+    margin:5px;
+  }
+
+  h1{
+      text-align:center;
+  }
+
+
+  p,h2,h3,ul{
+      margin:3px;
+  }
+  .nhfcu-rewards,.news-and-events,.loans-information{
+      display:grid;
+      grid-template-columns:1fr;
+      justify-items:center;
+      align-items:center;
+      text-align:center;
+      .percent{
+          font-size:45px;
+          font-weight:900;
+      }
+      
+  }
+
+  .nhfcu-membership,.buying-a-home,.loan-rates{
+      display:grid;
+ 
+  }
+  /* unvisited link */
+.nhfcu-membership a:link,.buying-a-home a:link,.loan-rates a:link {
+    color:gainsboro;
+}
+
+/* visited link */
+.nhfcu-membership a:visited,.buying-a-home a:visited,.loan-rates a:visited {
+    color:white;
+}
+
+/* mouse over link */
+.nhfcu-membership a:hover,.buying-a-home a:hover,.loan-rates a:hover  {
+    color: purple;
+}
+
+/* selected link */
+.nhfcu-membership a:active,.buying-a-home a:active,.loan-rates a:active{
+    color:rgb(94, 0, 94);
+}
+
+  /* unvisited link */
+a:link {
+    color:rgb(17, 16, 16);
+}
+
+/* visited link */
+a:visited {
+    color:rgb(22, 22, 22);
+}
+
+/* mouse over link */
+a:hover {
+    color:var(--royalblue-shade-verylow);
+}
+
+/* selected link */
+a:active {
+    color:blue;
+}
+
+  /* END MOBILE WIREFRAME */
+
+  /* For desktop have that large center column look with thick white space on each side look for large screens, limit the width based on media size? */
+  /* START DESKTOP WIREFRAME */
+  /* END DESKTOP WIREFRAME */
+
+
+/* Mobile Media Queries */
+/* Why does order matter for media queries?? RTFM!! Hmm..*/
+/* Also replace with minmax() where possible */
+@media all and (max-width: 475px) {
+    .header-logo-and-white-space{
+        font-size:24px;
+        padding:5px;
+    }
+    
+}
+
+@media all and (max-width: 375px) {
+    .header-logo-and-white-space{
+        font-size:22px;
+        padding:4px;
+    }
+    
+}
+
+@media all and (max-width: 320px) {
+    .header-logo-and-white-space{
+        font-size:20px;
+        padding:3px;
+    }
+
+}
+
+@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
+@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
