@@ -289,6 +289,8 @@ h1 {
 p, h2, h3, ul, li {
   margin: 4px;
   line-height: 1.5; }
+  p li, h2 li, h3 li, ul li, li li {
+    list-style-type: square; }
 
 p {
   font-weight: 100; }
@@ -311,6 +313,9 @@ p {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.disclaimer-federal {
+  text-decoration: underline; }
 
 /* unvisited link */
 .nhfcu-membership a:link, .buying-a-home a:link, .loan-rates a:link {
