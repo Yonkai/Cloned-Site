@@ -31,6 +31,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
+  <a href="#" id="scroll" style="display: none;"><span></span></a>
   <!-- Based on sketch paper in my notebook -->
   <div class="maingrid">
     <header class="header">
@@ -249,6 +250,22 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Data//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location.hostname));
 //]]></script> -->
+<script>
+    // Scroll to top code
+    $(document).ready(function(){ 
+        $(window).scroll(function(){ 
+            if ($(this).scrollTop() > 100) { 
+                $('#scroll').fadeIn(); 
+            } else { 
+                $('#scroll').fadeOut(); 
+            } 
+        }); 
+        $('#scroll').click(function(){ 
+            $("html, body").animate({ scrollTop: 0 }, 600); 
+            return false; 
+        }); 
+    });
+    </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
