@@ -102,9 +102,7 @@ html {
   color: var(--main-bg-contrast-color); }
 
 body {
-  min-height: calc(100vh - 100px);
-  background-color: var(--royalblue-complement);
-  border: 5px solid var(--royalblue-complement); }
+  min-height: calc(100vh - 100px); }
 
 /* BEGIN MOBILE WIREFRAME */
 .maingrid {
@@ -289,8 +287,9 @@ h1 {
 p, h2, h3, ul, li {
   margin: 4px;
   line-height: 1.5; }
-  p li, h2 li, h3 li, ul li, li li {
-    list-style-type: square; }
+
+p li, h2 li, h3 li, ul li, li li {
+  list-style-type: square; }
 
 p {
   font-weight: 100; }
@@ -301,9 +300,10 @@ p {
   justify-items: center;
   align-items: center;
   text-align: center; }
-  .nhfcu-rewards .percent, .news-and-events .percent, .loans-information .percent {
-    font-size: 45px;
-    font-weight: 900; }
+
+.nhfcu-rewards .percent, .news-and-events .percent, .loans-information .percent {
+  font-size: 45px;
+  font-weight: 900; }
 
 .nhfcu-membership, .buying-a-home, .loan-rates {
   display: grid; }
@@ -518,5 +518,7 @@ a:active {
   h2,
   h3 {
     page-break-after: avoid; } }
+/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=main.scss.map */
 
 /*# sourceMappingURL=main.css.map */

@@ -103,8 +103,9 @@ html {
 
 body {
   min-height: calc(100vh - 100px);
-  background-color: var(--royalblue-complement);
-  border: 5px solid var(--royalblue-complement); }
+  // background-color: var(--royalblue-complement);
+  // border: 5px solid var(--royalblue-complement); 
+}
 
 /* BEGIN MOBILE WIREFRAME */
 .maingrid {
