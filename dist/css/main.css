@@ -404,7 +404,29 @@ a:active {
 @media (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
 @media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */ }
+  /* big landscape tablets, laptops, and desktops */
+  .information-and-CTAs-triple {
+    display: grid;
+    grid-template-columns: 323px 328px 323px;
+    grid-gap: 5px;
+    justify-self: center;
+    align-self: center;
+    align-content: space-around; }
+
+  .header {
+    grid-template-columns: 950px 50px;
+    justify-self: center;
+    align-self: center;
+    align-content: space-around; }
+
+  .searchbar-and-nav {
+    grid-template-columns: 960px 40px;
+    justify-self: center;
+    align-self: center;
+    align-content: space-around; }
+
+  .full-bleed-image-1, .full-bleed-image-2, .full-bleed-image-3 {
+    display: none; } }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */ }
 /* ==========================================================================
