@@ -216,7 +216,7 @@ body {
   width: 100%; }
 
 /* Decouple as needed */
-.fa-user-circle, .fa-map-marked-alt, .fa-phone {
+.fa-user-circle, .fa-map-marked-alt, .fa-phone, .fa-instagram, .fa-facebook, .fa-twitter {
   font-size: 35px;
   text-align: center;
   margin: 10px;
@@ -426,7 +426,12 @@ a:active {
     align-content: space-around; }
 
   .full-bleed-image-1, .full-bleed-image-2, .full-bleed-image-3 {
-    display: none; } }
+    display: none; }
+
+  .logo-and-copyright {
+    width: 1000px;
+    justify-self: center;
+    align-self: center; } }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */ }
 /* ==========================================================================
