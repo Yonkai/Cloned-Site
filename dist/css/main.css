@@ -102,7 +102,9 @@ html {
   color: var(--main-bg-contrast-color); }
 
 body {
-  min-height: calc(100vh - 100px); }
+  min-height: calc(100vh - 100px);
+  background-color: var(--royalblue-complement);
+  border: 5px solid var(--royalblue-complement); }
 
 #scroll {
   position: fixed;
@@ -111,7 +113,7 @@ body {
   cursor: pointer;
   width: 50px;
   height: 50px;
-  background-color: #3498db;
+  background-color: rgba(12, 12, 200, 0.6);
   text-indent: -9999px;
   display: none;
   -webkit-border-radius: 60px;
@@ -156,6 +158,12 @@ body {
   letter-spacing: 5px;
   color: var(--main-bg-color);
   padding: 5px; }
+
+.header-logo-and-white-space-short-title {
+  display: none; }
+
+.header-logo-and-white-space-long-title {
+  display: inline; }
 
 .header-logo-and-white-space i span {
   font-family: 'Russo One', sans-serif; }
@@ -388,22 +396,41 @@ a:active {
 /* Why does order matter for media queries?? RTFM!! Hmm..*/
 /* Also replace with minmax() where possible */
 @media all and (max-width: 475px) {
-  .header-logo-and-white-space {
-    font-size: 24px;
-    padding: 5px; } }
+  .header-logo-and-white-space-short-title {
+    display: inline; }
+
+  .header-logo-and-white-space-long-title {
+    display: none; }
+
+  padding: 4px; }
 @media all and (max-width: 375px) {
-  .header-logo-and-white-space {
-    font-size: 22px;
-    padding: 4px; } }
+  .header-logo-and-white-space-short-title {
+    display: inline; }
+
+  .header-logo-and-white-space-long-title {
+    display: none; }
+
+  padding: 4px; }
 @media all and (max-width: 320px) {
-  .header-logo-and-white-space {
-    font-size: 20px;
-    padding: 3px; } }
-@media (min-width: 600px) {
+  .header-logo-and-white-space-short-title {
+    display: inline; }
+
+  .header-logo-and-white-space-long-title {
+    display: none; }
+
+  padding: 4px; }
+@media all and (max-width: 600px) {
+  .header-logo-and-white-space-short-title {
+    display: inline; }
+
+  .header-logo-and-white-space-long-title {
+    display: none; }
+
+  padding: 4px;
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width: 801px) {
+@media all and (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width: 1025px) {
+@media all and (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   .information-and-CTAs-triple {
     display: grid;
