@@ -93,6 +93,9 @@ textarea {
   --royalblue-complement:#F3A200;
   --rotate-icon:335deg; }
 
+  // https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+  // Use the above responsive design code for the banking clone part...
+
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
