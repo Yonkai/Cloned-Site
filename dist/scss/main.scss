@@ -106,8 +106,8 @@ html {
 
 body {
   min-height: calc(100vh - 100px);
-  background-color: var(--royalblue-complement);
-  border: 5px solid var(--royalblue-complement); 
+  // background-color: var(--royalblue-complement);
+  // border: 5px solid var(--royalblue-complement); 
 }
 
 //Fasrom Codepen
@@ -310,10 +310,12 @@ img {
 .information-and-CTAs-single {
   display: grid;
   color: var(--main-bg-color);
-  background-color: var(--royalblue-shade-high);
-  grid-template-columns: minmax(300px, 1024px);
+  // background-color: var(--royalblue-shade-high);
+  grid-template-columns: minmax(250px, 1024px);
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+
+}
 
 /*grid item of information-and-CTAs-single */
 .information-and-CTAs-single-explore {
@@ -345,14 +347,18 @@ p {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
-  text-align: center; }
+  text-align: center; 
+  background-color:var(--royalblue-shade-high);
+}
 
 .nhfcu-rewards .percent, .news-and-events .percent, .loans-information .percent {
   font-size: 45px;
   font-weight: 900; }
 
 .nhfcu-membership, .buying-a-home, .loan-rates {
-  display: grid; }
+  display: grid;
+  background-color:var(--royalblue-shade-high);
+}
 
 .disclaimer {
   font-style: italic;
@@ -452,8 +458,6 @@ a:active {
     justify-self:center;
     align-self:center;
     align-content:space-around;
-
-
   }
   .header{
     grid-template-columns: 950px 50px;
