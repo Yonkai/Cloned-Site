@@ -147,7 +147,10 @@ body {
 .header {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 15fr 1fr; }
+  grid-template-columns: 15fr 1fr;
+  position: sticky;
+  top: 0;
+  background: white; }
 
 .header-logo-and-white-space {
   background-color: var(--royalblue-shade-med);
