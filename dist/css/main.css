@@ -115,7 +115,7 @@ body {
   top: 60px;
   height: 100vh;
   background-color: #f1f1f1;
-  min-width: 1024px;
+  min-width: 1200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1; }
 
@@ -252,9 +252,9 @@ body {
   width: 100%; }
 
 .full-bleed-image-3 {
-  background: var(--main-bg-color) url(../img/outcrop.jpg);
+  background: var(--main-bg-color) url(../img/mountains2.jpg);
   background-size: cover;
-  /* background-position: top left; */
+  background-position: bottom right;
   min-height: 400px;
   width: 100%; }
 
@@ -338,7 +338,7 @@ img {
 .information-and-CTAs-single {
   display: grid;
   color: var(--main-bg-color);
-  grid-template-columns: minmax(250px, 1024px);
+  grid-template-columns: minmax(250px, 1200px);
   justify-content: center;
   align-items: center; }
 
@@ -466,24 +466,24 @@ a:active {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
 @media all and (min-width: 801px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1200px) {
   /* big landscape tablets, laptops, and desktops */
   .information-and-CTAs-triple {
     display: grid;
-    grid-template-columns: 323px 328px 323px;
+    grid-template-columns: 400px 400px 400px;
     grid-gap: 5px;
     justify-self: center;
     align-self: center;
     align-content: space-around; }
 
   .header {
-    grid-template-columns: 950px 50px;
+    grid-template-columns: 1125px 75px;
     justify-self: center;
     align-self: center;
     align-content: space-around; }
 
   .searchbar-and-nav {
-    grid-template-columns: 960px 40px;
+    grid-template-columns: 1140px 60px;
     justify-self: center;
     align-self: center;
     align-content: space-around; }
@@ -492,9 +492,12 @@ a:active {
     display: none; }
 
   .logo-and-copyright {
-    width: 1000px;
+    width: 1200px;
     justify-self: center;
-    align-self: center; } }
+    align-self: center; }
+
+  p {
+    font-size: 1.25em; } }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */ }
 /* ==========================================================================
