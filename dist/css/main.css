@@ -486,8 +486,13 @@ a:active {
     align-self: center;
     align-content: space-around; }
 
-  .full-bleed-image-1, .full-bleed-image-2, .full-bleed-image-3 {
+  .full-bleed-image-2 {
     display: none; }
+
+  .full-bleed-image-1, .full-bleed-image-3 {
+    min-width: 500px;
+    justify-self: center;
+    width: 1200px; }
 
   .logo-and-copyright {
     width: 1200px;
