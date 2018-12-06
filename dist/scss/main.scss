@@ -364,7 +364,7 @@ body > div > header > div.header-logo-and-white-space > a{
   // background-color: var(--royalblue-shade-high);
   grid-template-columns: minmax(250px, 1200px);
   justify-content: center;
-  align-items: center;
+  // align-items: center;
 
 }
 
@@ -535,6 +535,14 @@ a:active {
 
   p{
     font-size:1.25em;
+  }
+
+  .information-and-CTAs-single-group-grid{
+    display:grid;
+    grid-template-columns:390px 390px 390px;
+    column-gap:15px;
+    justify-content:center;
+
   }
 }
 
