@@ -64,11 +64,27 @@
         <!-- <img src="img/meadows.jpg"/> -->
     </div>
 
-    <div class="information-and-CTAs-triple">
-        <div class="information-and-CTAs-triple-item-1"><i class="fas fa-phone"></i><div class="information-and-CTAs-triple-item-1-text"><a href="#">Call</a></div></div>
-        <div class="information-and-CTAs-triple-item-2"><i class="fas fa-map-marked-alt"></i><div class="information-and-CTAs-triple-item-2-text"><a href="#">Find Branch</a></div></div>
-        <div class="information-and-CTAs-triple-item-3"><i class="fas fa-user-circle"></i><div class="information-and-CTAs-triple-item-3-text"><a href="#">Access Account</a></div></div>
+<div class="information-and-CTAs-triple">
+
+  <div class="information-and-CTAs-triple-item-1"><i class="fas fa-phone"></i>
+    <div class="information-and-CTAs-triple-item-1-text"><a href="#">Call</a></div>
+  </div>
+
+  <div class="information-and-CTAs-triple-item-2"><i class="fas fa-map-marked-alt"></i>
+    <div class="information-and-CTAs-triple-item-2-text"><a href="#">Find Branch</a></div>
+  </div>
+
+  <div class="information-and-CTAs-triple-item-3"><i class="fas fa-user-circle"></i>
+    <div class="information-and-CTAs-triple-item-3-text top-login"><a href="#" id="trigger-top-login-modal">Access
+        Account</a>
+      <div id="top-login-overlay"></div>
+      <div id="top-login-modal">
+        <span>X</span>
+        <div>Login</div>
+      </div>
     </div>
+  </div>
+</div>
 
     <div class="information-and-CTAs-single-group-grid">
     <div class="information-and-CTAs-single">
@@ -288,6 +304,15 @@
             return false; 
         }); 
     });
+
+    //codepen modal code
+    $('#trigger-top-login-modal').click(function(){
+    $('#top-login-overlay, #top-login-modal').show();
+	});
+
+	$('#top-login-overlay, #top-login-modal span').click(function(){
+		$('#top-login-overlay, #top-login-modal').hide();
+	});
     </script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
