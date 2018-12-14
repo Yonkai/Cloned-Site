@@ -104,6 +104,16 @@ html {
 body {
   min-height: calc(100vh - 100px); }
 
+form.form-example {
+  display: table; }
+
+div.form-example {
+  display: table-row; }
+
+label, input {
+  display: table-cell;
+  margin-bottom: 10px; }
+
 /* Dropdown Button */
 .dropbtn {
   border: none; }
