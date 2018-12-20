@@ -125,6 +125,11 @@ label, input {
   margin-bottom: 10px;
 }
 
+#top-login-modal > span{
+  font-size:20px;
+  margin:3px;
+}
+
 
 /* Dropdown Button */
 .dropbtn {
@@ -172,7 +177,8 @@ label, input {
     cursor: pointer;
     display: block;
     float: right;
-    font-size: 30px;
+    font-size: 40px;
+    margin:5px;
 }
 #top-login-overlay {
     background-color: rgba(0, 0, 0, 0.8);
