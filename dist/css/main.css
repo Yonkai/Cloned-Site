@@ -107,6 +107,9 @@ body {
 form.form-example {
   display: table; }
 
+#name, #pass {
+  margin: 4px; }
+
 div.form-example {
   display: table-row; }
 

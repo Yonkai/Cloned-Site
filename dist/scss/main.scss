@@ -113,7 +113,13 @@ body {
 }
 
 form.form-example {
+  //Table, probably not a good idea.
   display: table;
+
+}
+
+#name,#pass{
+  margin:5px;
 }
 
 div.form-example {
