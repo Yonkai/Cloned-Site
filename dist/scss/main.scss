@@ -122,6 +122,7 @@ form.form-example {
   margin:5px;
 }
 
+
 div.form-example {
   display: table-row;
 }
@@ -178,6 +179,10 @@ label, input {
 #top-login-modal {
     display: none;
     position: fixed;
+}
+
+#top-login-modal{
+  border:10px solid var(--royalblue-complement);
 }
 #top-login-modal span {
     cursor: pointer;
