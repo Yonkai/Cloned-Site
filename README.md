@@ -1,3 +1,12 @@
-# Cloned-Site 
+# Cloned banking site
+Clone or more accurately described as a borrowed layout but transitioned to CSS native grid system of a local banking website's homepage, made purely for practice and self-entertainment after watching [Wes Bos](cssgrid.io)' grid tutorials.
 
-This is just a mock site for practice purposes. Clone of a local banking site near me. Made using CSS native grid, I created this as a practical test/use case for CSS-grid templating and outlining. It is not a real banking site, obviously.
+## Made With
+* CSS Grid
+* Sass
+
+## Author
+* Frank Gunsch
+
+## License
+This project is licensed under the MIT License
