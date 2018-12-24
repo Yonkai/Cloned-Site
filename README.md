@@ -3,7 +3,7 @@ Clone or more accurately described as a borrowed layout but transitioned to CSS 
 
 ## Made With
 * CSS Grid
-* {Sass}(http://sass-lang.com)
+* [Sass](http://sass-lang.com)
 
 ## Author
 * Frank Gunsch
