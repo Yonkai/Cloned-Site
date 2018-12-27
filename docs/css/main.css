@@ -125,32 +125,6 @@ label, input {
 .dropbtn {
   border: none; }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  top: 60px;
-  height: 100vh;
-  background-color: #f1f1f1;
-  min-width: 1206px;
-  z-index: 1; }
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  font-size: 26px;
-  text-decoration: none;
-  display: block; }
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd; }
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block; }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
 #top-login-overlay,
 #top-login-modal {
   display: none;

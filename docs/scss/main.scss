@@ -143,37 +143,6 @@ label, input {
   border: none;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position:absolute;
-  // Height of the logo and nav icon elements
-  top:60px;
-  height:100vh;
-  background-color: #f1f1f1;
-  min-width: 1206px;
-  // box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  // padding: 12px 16px;
-  font-size:26px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-// .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
 // Codepen modal
 #top-login-overlay, 
 #top-login-modal {
@@ -182,7 +151,7 @@ label, input {
 }
 
 #top-login-modal{
-  border:10px solid var(--royalblue-complement);  bn 
+  border:10px solid var(--royalblue-complement); 
 }
 #top-login-modal span {
     cursor: pointer;
