@@ -9,7 +9,7 @@ Clone or more accurately described as a borrowed layout but transitioned to CSS 
 * Frank Gunsch
 
 ## Live Link
-https://yonkai.github.io/Cloned-Site/
-
+ https://yonkai.github.io/local-banking-site-remade/
+ 
 ## License
 This project is licensed under the MIT License
